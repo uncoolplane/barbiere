@@ -131,6 +131,27 @@ section {
   border: 0;
 }
 
+.social .flex {
+  justify-content: space-between;
+}
+
+.social .flex li.col {
+    width: 32%;
+}
+
+.social i {
+  display: block;
+}
+
+.social li {
+  text-align: center;
+}
+
+.social li span {
+  display: block;
+  margin-top: 10px;
+}
+
 @media (min-width:768px) {
   .cover {
     height: 630px;
