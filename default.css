@@ -1,0 +1,65 @@
+@import ("reset.css");
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #3B4650;
+}
+
+*::after, *::before {
+  box-sizing: border-box;
+}
+
+.center {
+  text-align: center;
+}
+
+h2 {
+}
+
+h3 {
+  font-size: inherit;
+}
+
+h3 span {
+  font-weight: normal;
+  margin-left: 1em;
+}
+
+em {
+  font-size: .9em;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 5px;
+}
+
+.flex {
+  display: block;
+}
+
+.flex .col {
+  flex: none;
+  padding: 10px 20px;
+}
+
+@media (min-width:768px) {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .flex .col {
+      flex: 1;
+  }
+}

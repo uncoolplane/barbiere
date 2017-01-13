@@ -1,14 +1,4 @@
-@import ("reset.css");
-
-* {
-  box-sizing: border-box;
-  font-family: sans-serif;
-  color: #3B4650;
-}
-
-*::after, *::before {
-  box-sizing: border-box;
-}
+@import "default.css";
 
 /*main, footer {*/
 footer {
@@ -73,38 +63,9 @@ section {
   width: 100%;
 }
 
-.center {
+.definition-inner {
   margin-left: 25%;
   margin-right: 25%;
-}
-
-h2 {
-}
-
-h3 {
-  font-size: inherit;
-}
-
-h3 span {
-  font-weight: normal;
-  margin-left: 1em;
-}
-
-em {
-  font-size: .9em;
-  font-weight: bold;
-  text-decoration: none;
-  font-style: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  margin: 0;
-  padding: 5px;
 }
 
 #customer {
@@ -116,21 +77,19 @@ ul li {
   background-position: center;
   background-size: cover;
   padding: 20px;
-  position: relative;
   text-align: center;
   max-height: 330px;
   width: 100%;
 }
 
 .cover-inner {
-  position: relative;
-  padding-top: 100px;
+  padding-top: 10px;
   text-align: center;
   margin: auto;
 }
 
 .cover-inner .row:not(:first-of-type) {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .cover button {
@@ -153,9 +112,46 @@ ul li {
   max-width: 520px;
 }
 
+#shop {
+  display: none;
+}
+
+#shop img {
+  width: 450px
+}
+
+#map {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#map iframe {
+  width: 100%;
+  height: 280px;
+  border: 0;
+}
+
 @media (min-width:768px) {
   .cover {
     height: 630px;
     max-height:inherit;
   }
+
+  .cover-inner {
+    padding-top: 100px;
+  }
+
+  #shop {
+    display: block;
+  }
+
+  #shop img {
+    width: 360px;
+  }
+}
+
+@media (min-width: 1280px) {
+    #shop img {
+      width: 450px;
+    }
 }
