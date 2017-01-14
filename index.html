@@ -6,20 +6,22 @@
     <title>Barbiere SLC</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 
 <body>
     <header>
         <div class="header">
-            <h1>Barbiere</h1>
+            <h1><a href="#home">Barbiere</a></h1>
             <nav>
-                <a href="#">About</a>
-                <a href="#">Book Now</a>
-                <a href="#">Contact</a>
+                <a href="#about">About</a>
+                <a href="#appointment">Book Now</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
     <main>
+        <a href="#" id="home"></a>
         <section id="home">
             <div class="cover">
                 <div class="cover-inner">
@@ -27,7 +29,7 @@
                         <img src="img/barbiere-logo-light.png" alt="Logo">
                     </div>
                     <div class="row">
-                        <button type="button" name="button">Book an Appointment</button>
+                        <a href="#appointment"><button type="button" name="button">Book an Appointment</button></a>
                     </div>
                 </div>
             </div>
@@ -43,121 +45,176 @@
             </div>
         </section>
 
+        <a href="#" id="about"></a>
         <section id="about">
             <h2>About The Shop</h2>
             <hr>
 
             <div class="flex">
-              <div class="col">
-                <h3>Barbiere:</h3>
-                <p>341 West Pierpont Ave #2 <br> Salt Lake City, UT 84101</p>
-                <ul class="contact">
-                    <li><b>Phone:</b>(385) 240-5104</li>
-                    <li><b>Hours:</b>M-F 8:00 am - 5:00 pm
-                </ul>
-                <p>Kristina Wells, founder of Barbiere, offers the classic barber shop experience along with modern cuts for all hair types. Located on historic Peirpont Ave in Salt Lake City.</p>
-                <div id="map">
-                    <iframe  frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ8234sQP1UocRxLqWYZ88t-k&key=AIzaSyAV7Xc3wya57gAZqJJ9s1Ix9lcn1oWc9hE" allowfullscreen></iframe>
+                <div class="col">
+                    <h3>Barbiere:</h3>
+                    <p>341 West Pierpont Ave #2 <br> Salt Lake City, UT 84101</p>
+                    <ul class="contact">
+                        <li><b>Phone:</b>(385) 240-5104</li>
+                        <li><b>Hours:</b>M-F 8:00 am - 5:00 pm
+                    </ul>
+                    <p>Kristina Wells, founder of Barbiere, offers the classic barber shop experience along with modern cuts for all hair types. Located on historic Peirpont Ave in Salt Lake City.</p>
+                    <div id="map">
+                        <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ8234sQP1UocRxLqWYZ88t-k&key=AIzaSyAV7Xc3wya57gAZqJJ9s1Ix9lcn1oWc9hE" allowfullscreen></iframe>
+                    </div>
                 </div>
-              </div>
-              <div id="shop" class="col center">
-                  <img src="img/shop.jpg" alt="Shop Image" width="450">
-              </div>
+                <div id="shop" class="col center">
+                    <img src="img/shop.jpg" alt="Shop Image" width="450">
+                </div>
             </div>
         </section>
-        <section id="appointment">
+
+        <a href="#" id="appointment"></a>
+        <section>
             <em>We are growning our team. Now accepting applications.</em>
+
             <h2>Book an Appointment</h2>
             <hr>
-            <div class="list">
-                <ul>
-                    <li>
-                        <div class="">
-                            Haircut
-                        </div>
-                        <div class="">
-                            <span>30 mins</span>
-                            <span>$25.00</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="">
-                            Beard Trim
-                        </div>
-                        <div class="">
-                            <span>10 mins</span>
-                            <span>$15.00</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="">
-                            Line-Up
-                        </div>
-                        <div class="">
-                            <span>10 mins</span>
-                            <span>$20.00</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="">
-                            Shave
-                        </div>
-                        <div class="">
-                            <span>60 mins</span>
-                            <span>$50.00</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="">
-                            Haircut & Style
-                        </div>
-                        <div class="">
-                            <span>60 mins</span>
-                            <span>$50.00</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="">
-                            Shampoo & Condition
-                        </div>
-                        <div class="">
-                            <span>10 mins</span>
-                            <span>$10.00</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="">
-                            Trim
-                        </div>
-                        <div class="">
-                            <span>20 mins</span>
-                            <span>$20.00</span>
-                        </div>
-                    </li>
-                </ul>
+            <div class="apptmenu">
+                <div class="list">
+                    <ul>
+                        <li>
+                          <a href="#" class="flex">
+                            <div>
+                                <div class="label">
+                                    Haircut
+                                </div>
+                                <div class="cost">
+                                    <span>30 mins</span>
+                                    <span>$25.00</span>
+                                </div>
+                            </div>
+                            <div>
+                              <i class="fa fa-arrow-circle-o-right fa-2x"></i>
+                            </div></a>
+                        </li>
+                        <li>
+                          <a href="#" class="flex">
+                            <div>
+                                <div class="label">
+                                    Beard Trim
+                                </div>
+                                <div class="cost">
+                                    <span>10 mins</span>
+                                    <span>$15.00</span>
+                                </div>
+                            </div>
+                            <div>
+                              <i class="fa fa-arrow-circle-o-right fa-2x"></i>
+                            </div></a>
+                        </li>
+                        <li>
+                          <a href="#" class="flex">
+                            <div>
+                                <div class="label">
+                                    Line-Up
+                                </div>
+                                <div class="cost">
+                                    <span>10 mins</span>
+                                    <span>$20.00</span>
+                                </div>
+                            </div>
+                            <div>
+                              <i class="fa fa-arrow-circle-o-right fa-2x"></i>
+                            </div></a>
+                        </li>
+                        <li>
+                          <a href="#" class="flex">
+                            <div>
+                                <div class="label">
+                                    Shave
+                                </div>
+                                <div class="cost">
+                                    <span>60 mins</span>
+                                    <span>$50.00</span>
+                                </div>
+                            </div>
+                            <div>
+                              <i class="fa fa-arrow-circle-o-right fa-2x"></i>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">
+                                <div>
+                                    <div class="label">
+                                        Haircut &amp; Style
+                                    </div>
+                                    <div class="cost">
+                                        <span>60 mins</span>
+                                        <span>$50.00</span>
+                                    </div>
+                                </div>
+                                <div>
+                                  <i class="fa fa-arrow-circle-o-right fa-2x"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">
+                                <div>
+                                    <div class="label">
+                                        Shampoo &amp; Condition
+                                    </div>
+                                    <div class="cost">
+                                        <span>10 mins</span>
+                                        <span>$10.00</span>
+                                    </div>
+                                </div>
+                                <div>
+                                  <i class="fa fa-arrow-circle-o-right fa-2x"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex">
+                                <div>
+                                    <div class="label">
+                                        Trim
+                                    </div>
+                                    <div class="cost">
+                                        <span>20 mins</span>
+                                        <span>$20.00</span>
+                                    </div>
+                                </div>
+                                <div>
+                                  <i class="fa fa-arrow-circle-o-right fa-2x"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <!--menu-->
         </section>
+
+        <a href="#" id="contact"></a>
         <section id="contact">
             <h2>Let's Get In Touch!</h2>
             <hr>
-            <ul class="social flex">
-                <li class="col">
-                    <i class="fa fa-phone fa-3x"></i><span>385-240-5104</span>
+            <ul class="social flex-3">
+                <li class="item">
+                    <a href="#"><i class="fa fa-phone fa-3x"></i><span>385-240-5104</span></a>
                 </li>
-                <li class="col">
-                    <i class="fa fa-envelope fa-3x"></i><span>Barbiere801@gmail.com</span>
+                <li class="item">
+                    <a href="#"><i class="fa fa-envelope fa-3x"></i><span>Barbiere801@gmail.com</span></a>
                 </li>
-                <li class="col">
-                    <i class="fa fa-instagram fa-3x"></i><span>Instragram</span>
+                <li class="item">
+                    <a href="#"><i class="fa fa-instagram fa-3x"></i><span>Instragram</span></a>
                 </li>
-                <li class="col">
-                    <i class="fa fa-facebook-official fa-3x"></i><span>Facebook</span>
+                <li class="item">
+                    <a href="#"><i class="fa fa-facebook-official fa-3x"></i><span>Facebook</span></a>
                 </li>
-                <li class="col">
-                    <i class="fa fa-twitter fa-3x"></i><span>Twitter</span>
+                <li class="item">
+                    <a href="#"><i class="fa fa-twitter fa-3x"></i><span>Twitter</span></a>
                 </li>
-                <li class="col">
-                    <i id="yelp" class="fa fa-yelp fa-3x"></i><span>Yelp</span>
+                <li class="item">
+                    <a href="#"><i class="fa fa-yelp fa-3x"></i><span>Yelp</span></a>
                 </li>
             </ul>
         </section>

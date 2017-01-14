@@ -41,6 +41,10 @@ nav a {
   flex: 1;
 }
 
+body {
+  background-color: #F4FAF8;
+}
+
 main {
   margin-top:100px;
 }
@@ -131,12 +135,28 @@ section {
   border: 0;
 }
 
-.social .flex {
-  justify-content: space-between;
+.apptmenu {
+  height: 300px;
+  overflow-y: scroll;
+  border: 2px solid green;
+  margin: auto 100px;
 }
 
-.social .flex li.col {
-    width: 32%;
+.apptmenu li {
+  padding: 1em 2em;
+  border: 1px solid blue;
+}
+
+.apptmenu li a {
+  text-decoration: none;
+}
+
+.apptmenu li:hover {
+  background-color: lightyellow;
+}
+
+.apptmenu li .cost {
+  margin-top: 5px;
 }
 
 .social i {
@@ -150,6 +170,14 @@ section {
 .social li span {
   display: block;
   margin-top: 10px;
+}
+
+.social li a {
+  text-decoration: none;
+}
+
+.social li a > *:hover {
+  color: #337ab7;
 }
 
 @media (min-width:768px) {

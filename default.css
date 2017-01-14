@@ -14,6 +14,10 @@
   text-align: center;
 }
 
+h1 a, h1 a:hover {
+  color: inherit;
+}
+
 h2 {
 }
 
@@ -43,6 +47,16 @@ ul li {
   padding: 5px;
 }
 
+a:focus, a:hover {
+  color: #337ab7;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 2em;
+  font-size: .8em;
+}
+
 .flex {
   display: block;
 }
@@ -50,6 +64,18 @@ ul li {
 .flex .col {
   flex: none;
   padding: 10px 20px;
+}
+
+.flex-3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-3 .item {
+  flex:1;
+  flex-basis: 50%;
+  margin-top: .5em;
 }
 
 @media (min-width:768px) {
@@ -61,5 +87,17 @@ ul li {
 
   .flex .col {
       flex: 1;
+  }
+
+  .flex-3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .flex-3 .item {
+    flex:1;
+    flex-basis: 30%;
+    margin-top: 1em;
   }
 }
